@@ -1,0 +1,34 @@
+/*
+	Theme Name: jonathan
+	Theme URI: http://jonathanccardoso.github.io
+	Description: Theme portfolio
+	Author: Jonathan Cardoso
+	Author URI: http://jonathancardoso.esy.es
+	Version: 1.0
+*/
+
+body {
+	overflow-x: hidden;
+}
+img { 
+	width: 50%;
+}
+#about, #portfolio, #services, #contact, #footer {
+	padding-top: 3%;
+	padding-bottom: 2%;	
+	text-align: justify;
+}
+#services, #contact {
+    background-color: #F2F2F2;
+}
+#footer {
+	background-color: #22313F;
+	color: white;
+}
+#icons{
+	background-color: #162029;
+}
+/*not used*/
+#bg {
+	background-color: rgba(34,49,63,.9);
+}
