@@ -9,9 +9,13 @@
 
 body {
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 img { 
 	width: 50%;
+}
+a {
+	text-decoration: none;
 }
 p, span {
 	font-size: 18px;
@@ -40,9 +44,6 @@ p, span {
     border-width: 3px;
     max-width: 50px;
     border-color: #22313f;
-}
-.img-background {
-	height: 560px !important;
 }
 .contact p {
     font-size: 17px;
