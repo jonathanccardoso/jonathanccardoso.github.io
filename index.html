@@ -4,17 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---color of the flap, chrome mobile -->
+    <meta name="theme-color" content="#22313f">
+    <!---color of the flap, safari mobile-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#22313f">
+    <!---color of the flap, WPhone mobile-->
+    <meta name="msapplication-navbutton-color" content="#22313f">
 
-    <title>Jonathan Cardoso | Desenvolvedor Web</title>
+    <title>Jonathan Cardoso | Web developer</title>
 
-    <meta name="description" content="Portifólio pessoal pata apresentação de projetos">
+    <meta name="description" content="Portifólio pessoal pata apresentação de projetos ;)">
     <meta name="author" content="Jonathan Cardoso">
+    <meta name="robots" content="index, nofollow">
 
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">-->
 
   </head>
   <body>
@@ -41,9 +49,9 @@
 					<div class="carousel-item active">
 						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="images/background-header.jpg" height="550px">
 					</div>
-					<div class="text-justify carousel-caption">
+					<div class="text-justify carousel-caption mb-5">
 							<h3>Jonathan Cardoso</h3>
-							<p>Desenvolvedor Web, Natal, Brazil.</p>
+							<p>Web developer, Natal, Brazil.</p>
 					</div>
 				</div> 
 				<!-- <a class="carousel-control-prev" href="#carousel-749886" data-slide="prev"><span classs="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
@@ -54,17 +62,20 @@
 
 	<div class="container">
 		<div class="col-md-12">
-			<!-- menu 
-			<?php 
-			  $menuParameters = array(
-			    'theme_location' 	=> 'menu-categorias',
-			    'container'       => false,
-			    'echo'            => false,
-			    'items_wrap'      => '<nav class="menu-categorias">%3$s<nav>',
-			    'depth'           => 0,
-			  );
-			  echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
-			?> -->
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Contact</a>
+				</li>
+			</ul>
  		</div>
 	</div>
 
@@ -73,6 +84,7 @@
 			<h3 class="text-center mt-4">
 				ABOUT 
  			</h3>
+ 			<hr class="line-hr">
 			<div class="row">
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="images/profile.jpg" class="rounded-circle">
@@ -80,8 +92,8 @@
 				</div>
 				<div class="col-md-6 mt-5">
 					<p>Jonathan Cardoso</p>
-					<h2>WEB DEVELOPER</h2>
-					<p>I work as a freelancer web developer.</p>
+					<h5>WEB DEVELOPER</h5>
+					<!--<p>I work as a freelancer web developer.</p>-->
 				</div>
 				<div class="col-md-2">
 				</div>
@@ -105,6 +117,7 @@
 			<h3 class="text-center mt-4">
 				SERVICES
 			</h3>
+			<hr class="line-hr">
 			<div class="row">
 				<div class="col-md-3">
 				</div>
@@ -123,13 +136,14 @@
 			<h3 class="text-center mt-4">
 				PORTFOLIO
 			</h3>
+			<hr class="line-hr">
 			<div class="row">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-3">
-				</div>
+				</div>s
 				<div class="col-md-3">
 				</div>
 			</div>
@@ -140,92 +154,34 @@
 			<h3 class="text-center mt-4">
 				CONTACT
 			</h3>
+			<hr class="line-hr">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8">
 					<span>Pronto para começar seu próximo projeto conosco? Isso é ótimo! Dê-nos uma chamada ou envie-nos um e-mail e vamos retornar para você o mais rapidamente possível!</span>
 					<!-- icons das redes sociais -->				
 				</div>
-				
-				<div class="col-md-6">
-					<form role="form">
-						<div class="form-group">
-							<label for="exampleInputName">
-								Name
-							</label>
-							<input type="name" class="form-control" id="exampleInputName">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail1">
-								Email
-							</label>
-							<input type="email" class="form-control" id="exampleInputEmail1">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputName">
-								Message
-							</label>
-							<input type="name" class="form-control" id="exampleInputName">
-						</div>
-						<!--<div class="form-group">
-							 
-							<lSabel for="exampleInputPassword1">
-								Password
-							</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-						</div>
-						<div class="form-group">
-							 
-							<label for="exampleInputFile">
-								File input
-							</label>
-							<input type="file" class="form-control-file" id="exampleInputFile">
-							<p class="help-block">
-								Example block-level help text here.
-							</p>
-						</div>--> 
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Check me out
-							</label>
-						</div> 
-						<button type="submit" class="btn btn-primary">
-							Submit
-						</button>
-					</form>
-				</div>
-				<div class="col-md-6">
-					<p>Other ways of contracting</p>
-					 <p>jonathan99moura@hotmail.com</p>
-					 <p>(084) 99220-2556</p>
-					 <p>Rio Grande do Norte/RN - Brazil</p>
+				<div class="col-md-2">
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<footer class="row mt-1" id="footer">
-	   
-		<div class="container text-center">
-			<a href="https://www.facebook.com/Mobister/" target="_blank" id="icon_footer"><i id="social-fb" class="fa fa-facebook fa-2x social" title="facebook"></i></a>
-			<a href="https://www.instagram.com/somosmobister/" target="_blank" id="icon_footer"><i id="social-gp" class="fa fa-instagram fa-2x social" title="instagram"></i></a>
-			<a href="https://www.linkedin.com/company/mobister" target="_blank" id="icon_footer"><i id="social-tw" class="fa fa-linkedin-square fa-2x social" title="linkedln"></i></a>
-		</div>
-
+	<footer class="row mt-0" id="footer">	   
 		<div class="container">
 			<p><b>© 2018 Jonathan Cardoso.</b> All rights reserved.</p>
 		</div>
-
     </footer>
 </div>
 
-    <!--<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script> -->
+    <script src="js/scripts.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
 
   </body>
 </html>
