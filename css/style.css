@@ -14,7 +14,7 @@ img {
 	width: 50%;
 }
 p, span {
-	font-size: 18px;
+	font-size: 17px;
     line-height: 1.5;
 }
 #about, #portfolio, #services, #contact, #footer {
@@ -36,23 +36,50 @@ p, span {
 #bg {
 	background-color: rgba(34,49,63,.9);
 }
+#footer p {
+   	font-size: 15px;
+}
+#menu {
+	position: fixed;
+ 	z-index: 1;
+ 	height: 90px;
+	display: none;
+}
 .line-hr{
     border-width: 3px;
     max-width: 50px;
     border-color: #22313f;
 }
 .img-background {
-	height: 560px !important;
+	/*height: 560px !important;*/
+	margin-top: -85px; 
 }
 .contact p {
     font-size: 17px;
+}
+.profile{
+	font-weight: bold;
+	font-size: 15px;	
+}	
+a.nav-link.active {
+	background-color: #22313f !important;
+	color: white !important;
+}
+a.nav-link {
+	color: #22313f !important;
 }
 
 /*mobile*/
 @media (max-width: 425px) { 
 	.img-background	{
-		margin-left: -96% !important;
+		/*margin-left: -96% !important;
     	width: 210% !important;
+    	margin-top: 0px;*/
+
+    	height: 446px !important;
+ 		margin-top: -85px;
+	}
+	.name-header {
+		margin-top: 10px !important;
 	}
 }
-

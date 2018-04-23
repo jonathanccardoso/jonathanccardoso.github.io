@@ -17,47 +17,46 @@
     <meta name="robots" content="index, nofollow">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet"/>
+   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   </head>
   <body>
   <div class="container-fluid"> 
-   	 <div class="row mt-0"> 
+  	<div class="container">
+		<div class="col-md-12">
+			<ul class="nav nav-pills" id="menu">
+				<li class="nav-item">
+					<a class="nav-link active" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#services">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+ 		</div>
+	</div>
+   	
+   	<div class="row mt-0"> 
 			<div class="carousel slide" id="carousel-749886">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img class="d-block w-100 img-background" alt="background" src="images/background-header.jpg">
 					</div>
-					<div class="text-justify carousel-caption mb-2">
-							<h3>Jonathan Cardoso</h3>
-							<p>Web developer, Natal, Brazil.</p>
+					<div class="text-justify carousel-caption mb-2 name-header">
+							<h1>Jonathan Cardoso</h1>
+							<p>Web Developer, Natal, Brazil.</p>
 					</div>
 				</div> 
 			</div>
 	</div>
 
-	<div class="container">
-		<div class="col-md-12">
-			<!--<ul class="nav nav-pills">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Contact</a>
-				</li>
-			</ul>-->
- 		</div>
-	</div>
-
-	<div class="container">
+	<div class="container" id="about">
 		<div class="col-md-12">
 			<h3 class="text-center mt-4">
 				ABOUT 
@@ -66,27 +65,24 @@
 			<div class="row">
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="images/profile.jpg" class="rounded-circle">
-					<p class="mt-4 text-justify">PROFILE</p>
+					<p class="mt-4 text-justify profile">PROFILE</p>
 				</div>
-				<div class="col-md-6 mt-4">
-					<p>I work as a freelancer web developer.</p>
-					<p>Meu nome é Jonathan Cardoso, tenho 20 anos. Sou programador de linguagens para internet ;)</p>
-					<p>Desde os 12 anos de idade já me interessava pelos códigos. Porém, agora o hobby ficou mais forte virando profissão!</p>
-					<hr />
-				</div>
-				<div class="col-md-2">
-				</div>
+				<div class="col-md-7 mt-4 mb-4">
+					<p>My name is Jonathan Cardoso. </p>						
+					<p>I'm 20 years old. I'm an internet programmer ;)</p>
+					<p>Since the age of 12 I was already interested in codes. But the hobby was stronger ... becoming a profession!</p>
+					<p>Get to know my ONLINE RESUME! <a href="curriculo-jonathan-cardoso.pdf" target="_blank">Click here <i class="fa fa-file-pdf-o fa-2x social" title="online resume"></i></a></p>
+					<hr class="mb-0" />
+				</div>			
 			</div>
-			<div class="row">
+			<div class="row mb-3">
 				<div class="col-md-4">
-					<p class="text-justify">PROFESSIONAL</p>
+					<p class="text-justify profile">PROFESSIONAL</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<p>Trabalho como desenvolvedor web voltado tanto ao ramo empresárial quando o de freelancer.</p>
 					<p>Trabalhei em agências de publicidade, intituições academicas e em empresas de desenvolvimento. E desde o inicio que desenvolvendo o front-end e back-end.</p>
 					<p>Sempre levando a cada obstáculo um aprendizado tanto profissional quanto experiência de vida.</p>
-				</div>
-				<div class="col-md-2">
 				</div>
 			</div>
 		</div>
@@ -97,38 +93,39 @@
 				SERVICES
 			</h3>
 			<hr class="line-hr">
-			<div class="row text-center mt-5">
-				<div class="col-md-3">
-					<i class="fa fa-laptop fa-4x social mb-4" title=""></i>
-					<h4>Sites e Aplicações Web</h4>
-					<span>Desenvolvimento seguro usando as mais recentes tecnologias do mercado. Nosso objetivo é entregar soluções que agregam valor ao seu produto.</span>
+			<div class="row text-center mt-5 mb-2">
+				<div class="col-md-3 mt-4">
+					<i class="fa fa-laptop fa-4x social mb-4" title="websites and web applications"></i>
+					<h4>Websites and Web Applications</h4>
+					<span>Development using the latest technologies in the market. My goal is to deliver solutions that add value to your product.</span>
 				</div>
-				<div class="col-md-3">
-					<i class="fa fa-wrench fa-4x social mb-4" title=""></i>
-					<h4>SEO e Atualizações em Sites</h4>
-					<span>A prioridade nos codigos é a organização. Aliado às tags corretas, deixará seu site claro e acessível às ferramentas de busca. Atualizações em seu site com maior qualidade e segurança.</span>
+				<div class="col-md-3 mt-4">
+					<i class="fa fa-wrench fa-4x social mb-4" title="SEO and website updates"></i>
+					<h4>SEO and Website Updates</h4>
+					<span>The priority in the codes is the organization. Increasing and updating with the right tags will make your site accessible to search engines with higher quality and security.</span>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 mt-4">
 					<i class="fa fa-plus fa-4x social mb-4" title="create landing pages"></i>
-					<h4>Criação de Landing Pages</h4>
-					<span>Desenvolvimento de páginas altamente otimizadas, que descrevem seu negócio objetivamente e geram conversões para sua empresa.</span>
+					<h4>Creating Landing Pages</h4>
+					<span>Development of highly optimized pages, which describe your product objectively, generating conversions for your company.</span>
 				</div>
-				<div class="col-md-3">
-					<i class="fa fa-server fa-4x social mb-4" title=""></i>
-					<h4>Hospedagem Web</h4>
-					<span>Seu site hospedado nos melhores data centers da América Latina. Garantimos segurança e estabilidade.</span>
+				<div class="col-md-3 mt-4">
+					<i class="fa fa-server fa-4x social mb-4" title="web hosting"></i>
+					<h4>Web Hosting</h4>
+					<span>Your site hosted on the best data centers. We guarantee security and stability.</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="row" id="portfolio">
-		<div class="container">
-			<h3 class="text-center mt-4">
+		<div class="container text-center">
+			<h3 class="mt-4">
 				PORTFOLIO
 			</h3>
 			<hr class="line-hr">
-			<!--<div class="row">
+			<i class="fa fa-spinner fa-spin fa-5x social mt-4" title=""></i>
+			<!--<div class="row mb-2">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-3">
@@ -139,17 +136,19 @@
 				</div>
 				<div class="col-md-3">
 				</div>
-			</div>
-			<div>
-				<div class="col-md-3">
-				</div>
-				<div class="col-md-3">
+			</div> 
+			<h4 class="text-center mt-4">
+				PROJECTS
+			</h4>
+			<div class="row mb-2 text-center">
+				<div class="col-md-4">
 					<p>IGAMES</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<p>SAMU</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4">
+					<p>JOGO DA VELHA</p>
 				</div>
 			</div>-->
 		</div>
@@ -163,9 +162,9 @@
 			<div class="row">
 				<div class="col-md-2">
 				</div>
-				<div class="col-md-8 text-justify">
-					<span>Entre em contato, tire suas dúvidas, peça mais informações!</span> <br/>
-					<span>Dê-nos uma chamada ou envie um e-mail e retornarei o mais rapido possível! Ficarei feliz em responder sua consulta sem compromisso de contratação.</span>
+				<div class="col-md-8 text-center">
+					<span>Contact us, ask your questions, ask for more information! </span> <br/>
+					<span>Send me an email and I'll get back to you as soon as possible! I will be happy to answer your query without hiring commitment.</span>
 
 					<div class="row mt-5 text-center contact">
 						<div class="col-md-3">
@@ -173,7 +172,7 @@
 							<p>+55 (84) 92020-2556</p>
 						</div>
 						<div class="col-md-3">
-							<a href="www.linkedin.com/in/jonathan99moura" target="_blank"><i class="fa fa-linkedin fa-3x social" title="linkedin"></i></a>
+							<a href="http://www.linkedin.com/in/jonathan99moura" target="_blank"><i class="fa fa-linkedin fa-3x social" title="linkedin"></i></a>
 						</div>
 						<div class="col-md-3">
 							<a href="https://github.com/jonathanccardoso" target="_blank"><i class="fa fa-github fa-3x social" title="https://github.com/jonathanccardoso"></i></a>
@@ -209,8 +208,21 @@
 		</div>
     </footer>
 </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+    	$(document).ready(function(){
+		    $(window).scroll(function(){
+		        if ($(this).scrollTop() > 120) {
+		            $('#menu').fadeIn(500);
+		        } else {
+		            $('#menu').fadeOut(500);
+		        }
+		    });
+		  });	
+    </script>
+
   </body>
 </html>
