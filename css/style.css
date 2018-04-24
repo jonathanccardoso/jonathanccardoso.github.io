@@ -45,6 +45,13 @@ p, span {
  	height: 90px;
 	display: none;
 }
+#footer a {
+	color: white;
+}
+a:hover {
+	background-color: #22313f;
+	color: #22313f;
+}
 .line-hr{
     border-width: 3px;
     max-width: 50px;
