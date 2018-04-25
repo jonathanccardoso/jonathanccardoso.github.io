@@ -4,23 +4,26 @@
 	Description: Theme portfolio
 	Author: Jonathan Cardoso
 	Author URI: https://jonathanccardoso.github.io/
-	Version: 1.1
+	Version: 2.1
 */
 
 body {
 	overflow-x: hidden;
 }
 img { 
-	width: 50%;
+	width: 55%;
 }
 p, span {
 	font-size: 17px;
     line-height: 1.5;
 }
 #about, #portfolio, #services, #contact, #footer {
-	padding-top: 3%;
+	padding-top: 2%;
 	padding-bottom: 2%;	
 	text-align: justify;
+}
+#about {
+	padding-top: 1%;
 }
 #services, #contact {
     background-color: #F2F2F2;
@@ -58,8 +61,9 @@ a:hover {
     border-color: #22313f;
 }
 .img-background {
-	/*height: 560px !important;*/
-	margin-top: -85px; 
+	/*height: 560px !important;
+	margin-top: -85px; */
+	margin-top: -165px; 
 }
 .contact p {
     font-size: 17px;
@@ -68,6 +72,9 @@ a:hover {
 	font-weight: bold;
 	font-size: 15px;	
 }	
+.icon {
+	float: right;
+}
 a.nav-link.active {
 	background-color: #22313f !important;
 	color: white !important;
@@ -83,10 +90,21 @@ a.nav-link {
     	width: 210% !important;
     	margin-top: 0px;*/
 
-    	height: 446px !important;
- 		margin-top: -85px;
+    	/*height: 446px !important;
+ 		margin-top: -85px !important;*/
+ 		display: none !important;
 	}
 	.name-header {
 		margin-top: 10px !important;
+	}
+	.icon {
+		float: none !important;
+		text-align: center !important;
+	}
+	.rounded-circle {
+		margin-left: 26%; 
+	}
+	#profile-hr {
+		margin-top: 2px !important;
 	}
 }
