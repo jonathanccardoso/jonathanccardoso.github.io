@@ -1,2 +1,2 @@
 # jonathanccardoso.github.io
-A personal page ;)
+A personal page
