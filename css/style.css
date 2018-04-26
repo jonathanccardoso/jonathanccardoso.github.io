@@ -14,7 +14,7 @@ img {
 	width: 55%;
 }
 p, span {
-	font-size: 17px;
+	font-size: 16px;
     line-height: 1.5;
 }
 #about, #portfolio, #services, #contact, #footer {
@@ -104,7 +104,7 @@ a.nav-link {
 	.rounded-circle {
 		margin-left: 26%; 
 	}
-	#profile-hr {
-		margin-top: 2px !important;
+	.profile-me	{
+		margin-top: 2px !important;			
 	}
 }

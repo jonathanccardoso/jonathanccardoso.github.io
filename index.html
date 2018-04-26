@@ -9,7 +9,7 @@
     <meta name="msapplication-navbutton-color" content="#22313f">
     <link rel="shortcut icon" href="images/favicon-icon.png" />
     <title>Jonathan Cardoso | Web Developer</title>
-    <meta name="description" content="Portfólio pessoal pata apresentação de projetos ;)">
+    <meta name="description" content="Personal portfolio for project presentation">
     <meta name="author" content="Jonathan Cardoso">
     <meta name="robots" content="index, nofollow">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,6 +46,7 @@
 						<img class="d-block w-100 img-background-mobile" alt="background" src="images/background-header-mobile.jpg">
 					</div>
 					<div class="text-justify carousel-caption mb-2 name-header">
+							<h1 class="typedtext"></h1>
 							<h1>Jonathan Cardoso</h1>
 							<p>Web Developer, Natal, Brazil.</p>
 					</div>
@@ -63,12 +64,12 @@
 					<img alt="Bootstrap Image Preview" src="images/profile.jpg" class="rounded-circle">
 					<p class="mt-4 text-justify profile">PROFILE</p>
 				</div>
-				<div class="col-md-7 mt-4 mb-1">
+				<div class="profile-me col-md-7 mt-5 mb-0">
 					<p>My name is Jonathan Cardoso. </p>						
-					<p>I'm 20 years old. I'm an web developer ;)</p>
+					<p>I'm 20 years old. I'm an web developer</p>
 					<p>Since the age of 12 I was already interested in codes. But the hobby was stronger... becoming a profession!</p>
 					<!--<p>Get to know my ONLINE RESUME! <a href="curriculo-jonathan-cardoso.pdf" target="_blank">Click here <i class="fa fa-file-pdf-o fa-2x social" title="online resume"></i></a></p>-->
-					<hr id="profile-hr" class="mt-5" />
+					<hr class="profile-me mt-5" />
 				</div>			
 			</div>
 			<div class="row mb-3">
@@ -98,7 +99,7 @@
 				<div class="col-md-3 mt-4">
 					<i class="fa fa-wrench fa-4x social mb-4" title="SEO and website updates"></i>
 					<h4>SEO and Website Updates</h4>
-					<span>The priority in the codes is the organization. Increasing and updating with the right tags will make your site accessible to search engines with higher quality and security.</span>
+					<span>The priority in the codes is the organization of your site. Updating making it accessible to search engines with quality and security.</span>
 				</div>
 				<div class="col-md-3 mt-4">
 					<i class="fa fa-plus fa-4x social mb-4" title="create landing pages"></i>
@@ -107,7 +108,7 @@
 				</div>
 				<div class="col-md-3 mt-4">
 					<i class="fa fa-server fa-4x social mb-4" title="web hosting"></i>
-					<h4>Web Hosting</h4>
+					<h4 class="mb-4">Web Hosting</h4>
 					<span>Your site hosted on the best data centers. We guarantee security and stability.</span>
 				</div>
 			</div>
@@ -119,7 +120,7 @@
 				PORTFOLIO
 			</h3>
 			<hr class="line-hr">
-			<i class="fa fa-spinner fa-spin fa-5x social mt-4 mb-4" title=""></i>
+			<i class="fa fa-spinner fa-spin fa-5x social mt-4 mb-4" title="loading"></i>
 			<!--<div class="row mb-2">
 				<div class="col-md-3">
 				</div>
@@ -199,11 +200,11 @@
 	<footer class="row mt-0" id="footer">	   
 		<div class="container">
 			<div class="icon mt-2">
-				<a class="p-1" href="https://github.com/jonathanccardoso" target="_blank"><i class="fa fa-github fa-2x social" title="https://github.com/jonathanccardoso"></i></a>
-				<a class="p-1" href="mailto:jonathan99moura@hotmail.com" target="_blank"><i class="fa fa-envelope fa-2x social" title="jonathan99moura@hotmail.com"></i></a>
-				<a class="p-1" href="http://www.linkedin.com/in/jonathan99moura" target="_blank"><i class="fa fa-linkedin fa-2x social" title="linkedin"></i></a>
-				<!--<a class="p-1" href="https://www.facebook.com/jonathanccardoso" target="_blank"><i class="fa fa-facebook fa-2x social" title="facebook"></i></a>-->
-				<a class="p-1" href="tel:+558492020-2556" target="_blank"><i class="fa fa-phone fa-2x social" title="+558492020-2556"></i></a>
+				<a class="p-2" href="https://fa-githubb.com/jonathanccardoso" target="_blank"><i class="fa fa-github fa-2x social" title="https://github.com/jonathanccardoso"></i></a>
+				<a class="p-2" href="mailto:jonathan99moura@hotmail.com" target="_blank"><i class="fa fa-envelope fa-2x social" title="jonathan99moura@hotmail.com"></i></a>
+				<a class="p-2" href="http://www.linkedin.com/in/jonathan99moura" target="_blank"><i class="fa fa-linkedin fa-2x social" title="linkedin"></i></a>
+				<!--<a class="p-2" href="https://www.facebook.com/jonathanccardoso" target="_blank"><i class="fa fa-facebook fa-2x social" title="facebook"></i></a>-->
+				<a class="p-2" href="tel:+558492020-2556" target="_blank"><i class="fa fa-phone fa-2x social" title="+558492020-2556"></i></a>
 			</div>
 			<p class="float-left mt-3"><b>© 2018 Jonathan Cardoso.</b> All rights reserved.</p>
 		</div>
@@ -212,8 +213,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <!--<script>
+   	<script>
+   		/*does not work*/
     	$(document).ready(function(){
+		    
 		    $(window).scroll(function(){
 		        if ($(this).scrollTop() > 120) {
 		            $('#menu').fadeIn(500);
@@ -221,7 +224,39 @@
 		            $('#menu').fadeOut(500);
 		        }
 		    });
+
+		  /*var options = {
+            startDelay: 0,
+            strings: [
+              "Fazer de Novo.<br>Fazer Melhor",
+              "Disruptiva. Fluida.<br>Colaborativa. Horizontal",
+              "Somos a resposta para seu desafio.<br>Venha com a gente"
+            ],
+            typeSpeed: 100,
+            backDelay: 1500,
+            loop: true,
+            cursorChar: '_',
+            onStringTyped: (arrayPos, self) => {
+              switch(arrayPos) {
+                case 0:
+                  self.typeSpeed = 80;
+                  self.backDelay = 2200;
+                  break;
+                case 1:
+                  self.typeSpeed = 50;
+                  self.backDelay = 1000;
+                  break;
+                case 2:
+                  self.typeSpeed = 100;
+                  self.backDelay = 1500;
+              }
+            }
+          }
+
+          var typed = new Typed(".typedtext", options);*/
+      //});
+
 		  });	
-   </script>-->
+   	</script>
   </body>
 </html>
