@@ -36,9 +36,7 @@
 	</div>
 	<div class="container" id="about">
 		<div class="col-md-12">
-			<h3 class="text-center mt-4">
-				ABOUT 
- 			</h3>
+			<h3 class="text-center mt-4">ABOUT</h3>
  			<hr class="line-hr">
 			<div id="scroll-about">
 				<div class="row">
@@ -68,9 +66,7 @@
 	</div>
 	<div class="row" id="services">
 		<div class="container">
-			<h3 class="text-center mt-4">
-				SERVICES
-			</h3>
+			<h3 class="text-center mt-4">SERVICES</h3>
 			<hr class="line-hr">
 			<div class="row text-center mt-4 mb-2" id="scroll-services">
 				<div class="col-md-3 mt-4" id="scroll-services-one">
@@ -98,12 +94,9 @@
 	</div>
 	<div class="row" id="portfolio">
 		<div class="container text-center">
-			<h3 class="mt-4">
-				PORTFOLIO
-			</h3>
+			<h3 class="mt-4">PORTFOLIO</h3>
 			<hr class="line-hr">
 			<i class="fa fa-spinner fa-spin fa-5x social mt-4 mb-4" title="loading"></i>
-
 			<!--<div class="row mb-2">
 				<div class="col-md-3">
 				</div>
@@ -132,7 +125,6 @@
 			</div>-->
 		</div>
 	</div>
-		
 	<footer class="row mt-0" id="footer">	   
 		<div class="container">
 			<div class="icon mt-2">
@@ -145,7 +137,6 @@
 		</div>
     </footer>
 </div>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -154,14 +145,17 @@
 		    $(window).scroll(function(){
 		        if ($(this).scrollTop() > 120) {
 		            $('#scroll-about').fadeIn(800);
-		        } 
-		        else if ($(this).scrollTop() > 220) {
+		        } else {
+		        	$('#scroll-about').fadeOut(500);
+		        }
+		    });
+		    $(window).scroll(function(){ 
+				if ($(this).scrollTop() > 220) {
 		            $('#scroll-services-one').fadeIn(800);
 		            $('#scroll-services-two').fadeIn(805);
 		            $('#scroll-services-three').fadeIn(810);
 		            $('#scroll-services-four').fadeIn(815);
 		        } else {
-		        	$('#scroll-about').fadeOut(500);
 		            $('#scroll-services').fadeOut(500);
 		        }
 		    });
