@@ -69,22 +69,22 @@
 			<h3 class="text-center mt-4">SERVICES</h3>
 			<hr class="line-hr">
 			<div class="row text-center mt-4 mb-2" id="scroll-services">
-				<div class="col-md-3 mt-4" id="scroll-services-one">
+				<div class="col-md-3 mt-4">
 					<i class="fa fa-laptop fa-4x social mb-4" title="websites and web applications"></i>
 					<h4>Websites and Web Applications</h4>
 					<span>Development using the latest technologies in the market. My goal is to deliver solutions that add value to your product.</span>
 				</div>
-				<div class="col-md-3 mt-4" id="scroll-services-two">
+				<div class="col-md-3 mt-4">
 					<i class="fa fa-wrench fa-4x social mb-4" title="SEO and website updates"></i>
 					<h4>SEO and Website Updates</h4>
 					<span>The priority in the codes is the organization of your site. Updating making it accessible to search engines with quality and security.</span>
 				</div>
-				<div class="col-md-3 mt-4" id="scroll-services-three">
+				<div class="col-md-3 mt-4">
 					<i class="fa fa-plus fa-4x social mb-4" title="create landing pages"></i>
 					<h4>Creating Landing Pages</h4>
 					<span>Development of highly optimized pages, which describe your product objectively, generating conversions for your company.</span>
 				</div>
-				<div class="col-md-3 mt-4" id="scroll-services-four">
+				<div class="col-md-3 mt-4">
 					<i class="fa fa-server fa-4x social mb-4" title="web hosting"></i>
 					<h4 class="mb-4">Web Hosting</h4>
 					<span>Your site hosted on the best data centers. We guarantee security and stability.</span>
@@ -151,11 +151,7 @@
 		    });
 		    $(window).scroll(function(){ 
 				if ($(this).scrollTop() > 720) {
-		            //$('#scroll-services').fadeIn(800);
-		            $('#scroll-services-one').fadeIn(800);
-		            $('#scroll-services-two').fadeIn(805);
-		            $('#scroll-services-three').fadeIn(810);
-		            $('#scroll-services-four').fadeIn(815);
+		            $('#scroll-services').fadeIn(800);
 		        } else {
 		            $('#scroll-services').fadeOut(500);
 		        }
