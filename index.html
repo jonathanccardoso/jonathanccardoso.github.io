@@ -124,6 +124,7 @@
 			</h3>
 			<hr class="line-hr">
 			<i class="fa fa-spinner fa-spin fa-5x social mt-4 mb-4" title="loading"></i>
+
 			<!--<div class="row mb-2">
 				<div class="col-md-3">
 				</div>
@@ -152,6 +153,7 @@
 			</div>-->
 		</div>
 	</div>
+
 	<!--<div class="row" id="contact">
 		<div class="container mb-2">
 			<h3 class="text-center mt-4">
@@ -165,7 +167,7 @@
 					<span>Contact us, ask your questions, ask for more information! </span> <br/>
 					<span>Send me an email and I'll get back to you as soon as possible! I will be happy to answer your query without hiring commitment.</span>
 
-					<!--<div class="row mt-5 text-center contact">
+					<div class="row mt-5 text-center contact">
 						<div class="col-md-3">
 							<a href="tel:+55 (84) 92020-2556" target="_blank"><i class="fa fa-phone fa-3x social" title="+55 (84) 92020-2556"></i></a>
 							<p>+55 (84) 92020-2556</p>
@@ -200,6 +202,7 @@
 			</div>
 		</div>
 	</div>-->
+	
 	<footer class="row mt-0" id="footer">	   
 		<div class="container">
 			<div class="icon mt-2">
@@ -223,15 +226,14 @@
 		    $(window).scroll(function(){
 		        if ($(this).scrollTop() > 120) {
 		            $('#scroll-about').fadeIn(800);
-		        } else {
-		            $('#scroll-about').fadeOut(500);
-		        }
-		        if ($(this).scrollTop() > 220) {
+		        } 
+		        else if ($(this).scrollTop() > 220) {
 		            $('#scroll-services-one').fadeIn(800);
 		            $('#scroll-services-two').fadeIn(805);
 		            $('#scroll-services-three').fadeIn(810);
 		            $('#scroll-services-four').fadeIn(815);
 		        } else {
+		        	$('#scroll-about').fadeOut(500);
 		            $('#scroll-services').fadeOut(500);
 		        }
 		    });
