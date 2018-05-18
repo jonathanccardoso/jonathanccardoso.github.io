@@ -93,7 +93,7 @@
 		</div>
 	</div>
 	<div class="row" id="portfolio">
-		<div class="container text-center">
+		<div class="container text-center scroll-portolio">
 			<h3 class="mt-4">PORTFOLIO</h3>
 			<hr class="line-hr">
 			<i class="fa fa-spinner fa-spin fa-5x social mt-4 mb-4" title="loading"></i>
@@ -127,7 +127,7 @@
 	</div>
 	<footer class="row mt-0" id="footer">	   
 		<div class="container">
-			<div class="icon mt-2">
+			<div class="icon mt-2 scroll-footer">
 				<a class="p-2" href="https://fa-github.com/jonathanccardoso" target="_blank"><i class="fa fa-github fa-2x social" title="https://github.com/jonathanccardoso"></i></a>
 				<a class="p-2" href="mailto:jonathan99moura@hotmail.com" target="_blank"><i class="fa fa-envelope fa-2x social" title="jonathan99moura@hotmail.com"></i></a>
 				<a class="p-2" href="http://www.linkedin.com/in/jonathan99moura" target="_blank"><i class="fa fa-linkedin fa-2x social" title="linkedin"></i></a>
@@ -154,6 +154,15 @@
 		            $('#scroll-services').fadeIn(800);
 		        } else {
 		            $('#scroll-services').fadeOut(500);
+		        }
+		    });
+		     $(window).scroll(function(){ 
+				if ($(this).scrollTop() > 820) {
+		            $('.scroll-portolio').fadeIn(800);
+		            $('.scroll-footer').fadeIn(800);
+		        } else {
+		            $('.scroll-portolio').fadeOut(500);
+		            $('.scroll-footer').fadeOut(500);
 		        }
 		    });
 		  });	
