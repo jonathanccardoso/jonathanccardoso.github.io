@@ -107,9 +107,6 @@ a.nav-link {
 a.p-2.phone{
 	display: none;
 }
-a.p-2.facebook{
-	display: block;
-}
 a.p-2.back_to_top {
     position: absolute;
     float: right;
@@ -150,7 +147,7 @@ i.fa.fa-angle-up.fa-2x.social {
 		display: none;
 	}
 	a.p-2.phone{
-		display: block;
+		display: inline;
 	}
 	a.p-2.back_to_top {
 	    right: -1em;
