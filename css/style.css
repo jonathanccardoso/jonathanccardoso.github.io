@@ -4,22 +4,26 @@
 	Description: Theme portfolio
 	Author: Jonathan Cardoso
 	Author URI: https://jonathanccardoso.github.io/
-	Version: 2.1
+	Version: 2.2
 */
 
 body {
 	overflow-x: hidden;
 }
-img { 
+img {
 	width: 55%;
 }
 p, span {
 	font-size: 16px;
     line-height: 1.5;
 }
+h1, h2, h3, h4, h5 {
+    font-family: Oswald,sans-serif;
+    font-weight: 400;
+}
 #about, #portfolio, #services, #contact, #footer {
 	padding-top: 2%;
-	padding-bottom: 2%;	
+	padding-bottom: 2%;
 	text-align: justify;
 }
 #about {
@@ -51,6 +55,24 @@ p, span {
 #footer a {
 	color: white;
 }
+#back_to_top {
+    color: #cdcdcd;
+    height: auto;
+    position: fixed;
+    top: 85%;
+    margin: 0;
+    z-index: 10000;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    right: -70px;
+}
+#back_to_top.on {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    right: 30px;
+}
 a:hover {
 	background-color: #22313f;
 	color: #22313f;
@@ -63,15 +85,15 @@ a:hover {
 .img-background {
 	/*height: 560px !important;
 	margin-top: -85px; */
-	margin-top: -165px; 
+	margin-top: -165px;
 }
 .contact p {
     font-size: 17px;
 }
 .profile{
 	font-weight: bold;
-	font-size: 15px;	
-}	
+	font-size: 15px;
+}
 .icon {
 	float: right;
 }
@@ -82,9 +104,26 @@ a.nav-link.active {
 a.nav-link {
 	color: #22313f !important;
 }
+a.p-2.phone{
+	display: none;
+}
+a.p-2.facebook{
+	display: block;
+}
+a.p-2.back_to_top {
+    position: absolute;
+    float: right;
+    top: 0em;
+    right: -4em;
+		background-color: white;
+}
+i.fa.fa-angle-up.fa-2x.social {
+    font-size: 2em;
+    color: #22313f;
+}
 
 /*mobile*/
-@media (max-width: 425px) { 
+@media (max-width: 425px) {
 	.img-background	{
 		/*margin-left: -96% !important;
     	width: 210% !important;
@@ -102,9 +141,18 @@ a.nav-link {
 		text-align: center !important;
 	}
 	.rounded-circle {
-		margin-left: 26%; 
+		margin-left: 26%;
 	}
 	.profile-me	{
-		margin-top: 2px !important;			
+		margin-top: 2px !important;
+	}
+	a.p-2.facebook{
+		display: none;
+	}
+	a.p-2.phone{
+		display: block;
+	}
+	a.p-2.back_to_top {
+	    right: -1em;
 	}
 }
