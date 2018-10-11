@@ -14,7 +14,7 @@ img {
 	width: 55%;
 }
 p, span {
-	font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
 }
 h1, h2, h3, h4, h5 {
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 400;
 }
 #portfolio {
-    height: 25em;
+    height: 24em;
     /*background-size: cover;*/
     background: url(https://www.cse.iitb.ac.in/~saiprasad/img/bg.png) fixed;
     background-position: bottom;
