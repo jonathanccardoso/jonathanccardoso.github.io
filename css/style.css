@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5 {
 }
 #portfolio {
     height: 25em;
-    background-size: cover;
+    /*background-size: cover;*/
     background: url(https://www.cse.iitb.ac.in/~saiprasad/img/bg.png) fixed;
     background-position: bottom;
 }
