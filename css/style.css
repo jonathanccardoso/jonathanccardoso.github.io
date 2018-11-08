@@ -7,9 +7,17 @@
 	Version: 2.2
 */
 
+/*retirando estilizações padrões do html*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
 body {
 	overflow-x: hidden;
 }
+
 img {
 	width: 55%;
 }
@@ -24,7 +32,7 @@ h1, h2, h3, h4, h5 {
 #portfolio {
     height: 24em;
     /*background-size: cover;*/
-    background: url(images/background-portfolio.jpg) fixed;
+    background: url(../images/background-portfolio.jpg) fixed;
     background-position: bottom;
 }
 #about, #portfolio, #services, #contact, #footer {
@@ -118,7 +126,7 @@ a.p-2.back_to_top {
     float: right;
     top: 0em;
     right: -4em;
-		background-color: white;
+	background-color: white;
 }
 i.fa.fa-angle-up.fa-2x.social {
     font-size: 2em;
