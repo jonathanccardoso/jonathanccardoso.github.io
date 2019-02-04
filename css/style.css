@@ -4,10 +4,9 @@
 	Description: Theme portfolio
 	Author: Jonathan Cardoso
 	Author URI: https://jonathanccardoso.github.io/
-	Version: 2.2
+	Version: 3.0
 */
 
-/*retirando estilizações padrões do html*/
 * {
 	margin: 0;
 	padding: 0;
@@ -34,6 +33,7 @@ h1, h2, h3, h4, h5 {
     /*background-size: cover;*/
     background: url(../images/background-portfolio.jpg) fixed;
     background-position: bottom;
+    margin-top: -2em;
 }
 #about, #portfolio, #services, #contact, #footer {
 	padding-top: 2%;
@@ -42,6 +42,9 @@ h1, h2, h3, h4, h5 {
 }
 #about {
 	padding-top: 1%;
+}
+#services {
+    transform: skew(0deg, -2deg);
 }
 #services, #contact {
     background-color: #F2F2F2;
