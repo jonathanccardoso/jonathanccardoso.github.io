@@ -1,7 +1,7 @@
 /*
 	Theme Name: Portfolio-Jonathan
 	Theme URI: https://jonathanccardoso.github.io/
-	Description: Theme portfolio
+	Description: Theme Portfolio
 	Author: Jonathan Cardoso
 	Author URI: https://jonathanccardoso.github.io/
 	Version: 3.0
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5 {
 	background-color: rgba(34,49,63,.9);
 }
 #footer p {
-   	font-size: 15px;
+   	font-size: 14px;
 }
 #menu {
 	position: fixed;
@@ -91,8 +91,11 @@ h1, h2, h3, h4, h5 {
     right: 30px;
 }
 a:hover {
-	background-color: #22313f;
+	/*background-color: #7f8386;*/ /*#22313f*/
 	color: #22313f;
+}
+button:hover {
+	background-color: #7f8386;	
 }
 .line-hr{
     border-width: 3px;
@@ -160,9 +163,9 @@ i.fa.fa-angle-up.fa-2x.social {
 	.profile-me	{
 		margin-top: 2px !important;
 	}
-	a.p-2.facebook{
+	/*a.p-2.facebook{
 		display: none;
-	}
+	}*/
 	a.p-2.phone{
 		display: inline;
 	}
