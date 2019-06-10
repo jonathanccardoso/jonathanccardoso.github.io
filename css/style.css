@@ -44,14 +44,18 @@ h1, h2, h3, h4, h5 {
 	padding-top: 1%;
 }
 #services {
-    transform: skew(0deg, -2deg);
+	/* transform: skew(0deg, -2deg); */
 }
 #services, #contact {
     background-color: #F2F2F2;
 }
 #footer {
-	background-color: #22313F;
+	/* background-color: #22313F; */
+	background-image: linear-gradient(to bottom, #f0f0f0, #000);
 	color: white;
+}
+#footer a:hover{
+	color: #22313F;
 }
 #icons{
 	background-color: #162029;
@@ -141,6 +145,9 @@ i.fa.fa-angle-up.fa-2x.social {
 
 /*mobile*/
 @media (max-width: 425px) {
+	#footer p {
+		font-size: 12px;
+	}
 	.img-background	{
 		/*margin-left: -96% !important;
     	width: 210% !important;
