@@ -19,9 +19,17 @@
   </head>
   <body>
   <div class="container-fluid">
-		<!--nav scrool
-		<nav></nav>-->
-   	<div class="row mt-0">
+	<!--<div class="row" id="header">
+		<div class="container">
+			<video autoplay loop poster="profile.jpg" class="bg_video">
+			    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+			</video>
+			<h1 class="typedtext"></h1>
+			<h1 class="text-right">Jonathan Cardoso</h1>
+			<p>Systems Analyst, Natal, Brazil.</p>
+		</div>
+	</div>-->
+	<div class="row mt-0">
 			<div class="carousel slide" id="carousel-749886">
 				<div class="carousel-inner">
 					<div class="carousel-item active" style="-webkit-opacity: 0.9;opacity: 0.9;-moz-opacity: 0.9;">
@@ -36,10 +44,9 @@
 				</div>
 			</div>
 	</div>
-	<div class="container" id="about">
+	<div class="container pt-1" id="about">
 		<div class="col-md-12">
 			<h3 class="text-center mt-4">ABOUT</h3>
- 			<!-- <hr class="line-hr"> -->
 			<div id="scroll-about">
 				<div class="row">
 					<div class="col-md-4">
@@ -67,40 +74,40 @@
 			</div>
 		</div>
 	</div>
-	<div class="row pb-5" id="services">
-		<div class="container mb-3">	<!-- style="transform: skew(0deg, 2deg);" -->
+	<div class="row pb-3" id="services">
+		<div class="container mb-3">
 			<h3 class="text-center mt-4">SERVICES</h3>
-			<div class="row text-center mt-4 mb-2" id="scroll-services">
-				<div class="col-md-3 mt-4">
-					<i class="fa fa-laptop fa-4x social mb-4" title="websites and web applications"></i>
-					<h4>Websites and Web Applications</h4>
-					<span>Development using the latest technologies in the market. My goal is to deliver solutions that add value to your product.</span>
+			<div class="row text-center mt-5 mb-2" id="scroll-services">
+				<div class="col-md-3 card p-3">
+					<i class="fa fa-laptop fa-5x social mb-4" title="websites and web applications"></i>
+					<h4>Web Applications</h4>
+					<span>Development using the latest technologies in the market.</span>
 				</div>
-				<div class="col-md-3 mt-4">
-					<i class="fa fa-wrench fa-4x social mb-4" title="SEO and website updates"></i>
+				<div class="col-md-3 card p-3">
+					<i class="fa fa-wrench fa-5x social mb-4" title="SEO and website updates"></i>
 					<h4>SEO and Website Updates</h4>
-					<span>The priority in the codes is the organization of your site. Updating making it accessible to search engines with quality and security.</span>
+					<span>The priority in the making it accessible to searchss engines with quality and security.</span>
 				</div>
-				<div class="col-md-3 mt-4">
-					<i class="fa fa-plus fa-4x social mb-4" title="create landing pages"></i>
-					<h4>Creating Landing Pages</h4>
-					<span>Development of highly optimized pages, which describe your product objectively, generating conversions for your company.</span>
+				<div class="col-md-3 card p-3">
+					<i class="fa fa-rocket fa-5x social mb-4" title="create landing pages"></i>
+					<h4>Landing Pages</h4>
+					<span>Development of highly optimized pages, generating conversions for your company.</span>
 				</div>
-				<div class="col-md-3 mt-4">
-					<i class="fa fa-server fa-4x social mb-4" title="web hosting"></i>
-					<h4 class="mb-4">Web Hosting</h4>
+				<div class="col-md-3 card p-3">
+					<i class="fa fa-server fa-5x social mb-4" title="web hosting"></i>
+					<h4>Web Hosting</h4>
 					<span>Your site hosted on the best data centers. We guarantee security and stability.</span>
 				</div>
 			</div>
 		</div>
 	</div>
 	<footer class="row p-4" id="footer">
-		<div class="container p-0 mt-4 mb-2">
+		<div class="container p-0 mt-2 mb-2">
 			<div class="icon mt-2 scroll-footer">
-				<a class="p-2" href="https://fa-github.com/jonathanccardoso" target="_blank"><i class="fa fa-github fa-3x social" title="https://github.com/jonathanccardoso"></i></a>
-				<a class="p-2" href="mailto:jonathan99moura@hotmail.com" target="_blank"><i class="fa fa-envelope fa-3x social" title="jonathan99moura@hotmail.com"></i></a>
-				<a class="p-2" href="https://www.linkedin.com/in/jonathanccardoso/" target="_blank"><i class="fa fa-linkedin fa-3x social" title="linkedin"></i></a>
-        <a class="p-2 facebook" href="http://www.facebook.com/jonathanccardoso" target="_blank"><i class="fa fa-facebook fa-3x social" title="facebook"></i></a>
+				<a class="p-2" href="https://fa-github.com/jonathanccardoso" target="_blank"><i class="fa fa-github fa-2x social" title="https://github.com/jonathanccardoso"></i></a>
+				<a class="p-2" href="mailto:jonathan99moura@hotmail.com" target="_blank"><i class="fa fa-envelope fa-2x social" title="jonathan99moura@hotmail.com"></i></a>
+				<a class="p-2" href="https://www.linkedin.com/in/jonathanccardoso/" target="_blank"><i class="fa fa-linkedin fa-2x social" title="linkedin"></i></a>
+        		<a class="p-2 facebook" href="http://www.facebook.com/jonathanccardoso" target="_blank"><i class="fa fa-facebook fa-2x social" title="facebook"></i></a>
 			</div>
 			<p class="float-left mt-3">© Copyright <b>Jonathan Cardoso</b> 2019. All rights reserved.</p>
 		</div>
@@ -110,6 +117,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
    	<script>
+   		/*slow down 
+   			view-source:https://eventos.ifrn.edu.br/frbrschool/
+   		*/
+
     	/*$(document).ready(function(){
 		    $(window).scroll(function(){
 		        if ($(this)S.scrollTop() > 120) {

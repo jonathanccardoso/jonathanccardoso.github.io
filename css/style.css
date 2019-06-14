@@ -1,10 +1,45 @@
+.wrap {
+    /*Ajuste a largura e altura desejadas aqui*/
+    width: 800px;
+    height: 300px;
+
+    /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+    position: relative;
+}
+
+.wrap > .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap > .bg-video > video {
+    width: 100%;
+}
+/*----*/
+.bg_video{
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url(images/profile.jpg) no-repeat;
+    /*background-size: cover; */
+}
+
+
 /*
 	Theme Name: Portfolio-Jonathan
 	Theme URI: https://jonathanccardoso.github.io/
 	Description: Theme Portfolio
 	Author: Jonathan Cardoso
 	Author URI: https://jonathanccardoso.github.io/
-	Version: 3.0
 */
 
 * {
@@ -28,6 +63,11 @@ h1, h2, h3, h4, h5 {
     font-family: Oswald,sans-serif;
     font-weight: 400;
 }
+#header {
+	/*height: 100vh;*/
+	/*background-color: black;*/
+	color: white;
+}
 #portfolio {
     height: 24em;
     /*background-size: cover;*/
@@ -35,18 +75,15 @@ h1, h2, h3, h4, h5 {
     background-position: bottom;
     margin-top: -2em;
 }
-#about, #portfolio, #services, #contact, #footer {
+#header, #about, #portfolio, #services, #footer {
 	padding-top: 2%;
 	padding-bottom: 2%;
 	text-align: justify;
 }
-#about {
-	padding-top: 1%;
-}
 #services {
 	/* transform: skew(0deg, -2deg); */
 }
-#services, #contact {
+#services {
     background-color: #F2F2F2;
 }
 #footer {
@@ -141,6 +178,19 @@ a.p-2.back_to_top {
 i.fa.fa-angle-up.fa-2x.social {
     font-size: 2em;
     color: #22313f;
+}
+
+.card {
+	background: #f2f2f2; 
+	/*box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);*/
+	border-radius: 12px;
+	overflow: hidden;
+	transition: all .2s linear;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 100px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -8px, 0);
 }
 
 /*mobile*/
