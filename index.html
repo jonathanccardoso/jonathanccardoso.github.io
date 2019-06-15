@@ -29,7 +29,7 @@
 			<p>Systems Analyst, Natal, Brazil.</p>
 		</div>
 	</div>-->
-	<div class="row mt-0">
+	<!--<div class="row mt-0">
 			<div class="carousel slide" id="carousel-749886">
 				<div class="carousel-inner">
 					<div class="carousel-item active" style="-webkit-opacity: 0.9;opacity: 0.9;-moz-opacity: 0.9;">
@@ -43,12 +43,35 @@
 					</div>
 				</div>
 			</div>
-	</div>
+	</div>-->
+
+	<div class="row" id="header">
+		<div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                  	 	<a href="#">Jonathan Cardoso</a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                  </div>
+            </nav>
+        </div>
+    </div>
+
 	<div class="container pt-1" id="about">
 		<div class="col-md-12">
 			<h3 class="text-center mt-4">ABOUT</h3>
-			<div id="scroll-about">
-				<div class="row">
+			<div>
+				<div class="row" id="scroll-profile">
 					<div class="col-md-4">
 						<img alt="Bootstrap Image Preview" src="images/profile.jpg" class="rounded-circle">
 						<p class="mt-4 text-justify profile">PROFILE</p>
@@ -61,7 +84,7 @@
 						<hr class="profile-me mt-5" />
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row mb-3" id="scroll-professional">
 					<div class="col-md-4">
 						<p class="text-justify profile">PROFESSIONAL</p>
 					</div>
@@ -77,23 +100,23 @@
 	<div class="row pb-3" id="services">
 		<div class="container mb-3">
 			<h3 class="text-center mt-4">SERVICES</h3>
-			<div class="row text-center mt-5 mb-2" id="scroll-services">
-				<div class="col-md-3 card p-3">
+			<div class="row text-center mt-5 mb-2">
+				<div class="col-md-3 card p-4" id="scroll-web">
 					<i class="fa fa-laptop fa-5x social mb-4" title="websites and web applications"></i>
 					<h4>Web Applications</h4>
 					<span>Development using the latest technologies in the market.</span>
 				</div>
-				<div class="col-md-3 card p-3">
+				<div class="col-md-3 card p-4" id="scroll-seo">
 					<i class="fa fa-wrench fa-5x social mb-4" title="SEO and website updates"></i>
 					<h4>SEO and Website Updates</h4>
 					<span>The priority in the making it accessible to searchss engines with quality and security.</span>
 				</div>
-				<div class="col-md-3 card p-3">
+				<div class="col-md-3 card p-4" id="scroll-page">
 					<i class="fa fa-rocket fa-5x social mb-4" title="create landing pages"></i>
 					<h4>Landing Pages</h4>
 					<span>Development of highly optimized pages, generating conversions for your company.</span>
 				</div>
-				<div class="col-md-3 card p-3">
+				<div class="col-md-3 card p-4" id="scroll-hosting">
 					<i class="fa fa-server fa-5x social mb-4" title="web hosting"></i>
 					<h4>Web Hosting</h4>
 					<span>Your site hosted on the best data centers. We guarantee security and stability.</span>
@@ -117,35 +140,35 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
    	<script>
-   		/*slow down 
+   		/*menu slow down
    			view-source:https://eventos.ifrn.edu.br/frbrschool/
    		*/
 
-    	/*$(document).ready(function(){
+    	$(document).ready(function(){
 		    $(window).scroll(function(){
-		        if ($(this)S.scrollTop() > 120) {
-		            $('#scroll-about').fadeIn(800);
+		        if ($(this).scrollTop() > 170) {
+		            $('#scroll-profile').fadeIn(2000);
+		            $('#scroll-professional').fadeIn(3000);
 		        } else {
-		        	$('#scroll-about').fadeOut(500);
+		        	$('#scroll-profile').fadeOut(600);
+		        	$('#scroll-professional').fadeOut(600);
 		        }
 		    });
 		    $(window).scroll(function(){
-				if ($(this).scrollTop() > 720) {
-		            $('#scroll-services').fadeIn(800);
+				//if ($(this).scrollTop() > 839) {
+				if ($(this).scrollTop() > 800) {
+		            $('#scroll-web').fadeIn(2100);
+		            $('#scroll-seo').fadeIn(2600);
+		            $('#scroll-page').fadeIn(3100);
+		            $('#scroll-hosting').fadeIn(3600);
 		        } else {
-		            $('#scroll-services').fadeOut(500);
+		            $('#scroll-web').fadeOut(600);
+		            $('#scroll-seo').fadeOut(600);
+		            $('#scroll-page').fadeOut(600);
+		            $('#scroll-hosting').fadeOut(600);
 		        }
 		    });
-		     $(window).scroll(function(){
-				if ($(this).scrollTop() > 820) {
-		            $('.scroll-portolio').fadeIn(800);
-		            $('.scroll-footer').fadeIn(800);
-		        } else {
-		            $('.scroll-portolio').fadeOut(500);
-		            $('.scroll-footer').fadeOut(500);
-		        }
-		    });
-		  });	*/
+		});
    	</script>
   </body>
 </html>
