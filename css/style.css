@@ -1,40 +1,5 @@
-.wrap {
-  /*Ajuste a largura e altura desejadas aqui*/
-  width: 800px;
-  height: 300px;
-
-  /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
-  position: relative;
-}
-
-.wrap > .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* evita do video passar a altura desejada do .wrap */
-}
-.wrap > .bg-video > video {
-  width: 100%;
-}
-/*----*/
-.bg_video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  background: url(images/profile.jpg) no-repeat;
-  /*background-size: cover; */
-}
-
 /*
-	Theme Name: Portfolio-Jonathan
+	Theme Name: Portfolio Jonathan
 	Theme URI: https://jonathanccardoso.github.io/
 	Description: Theme Portfolio
 	Author: Jonathan Cardoso
@@ -77,6 +42,74 @@ h5 {
   font-family: Oswald, sans-serif;
   font-weight: 400;
 }
+
+a {
+  color: #343a40;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #343a40;
+}
+button:hover {
+  background-color: #7f8386;
+}
+
+nav ul li a:hover {
+  color: white;
+  border-bottom: 0.25rem solid white;
+}
+
+a.nav-link.active {
+  background-color: #22313f !important;
+  color: white !important;
+}
+a.nav-link {
+  color: #22313f !important;
+}
+a.p-2.phone {
+  display: none;
+}
+a.p-2.back_to_top {
+  position: absolute;
+  float: right;
+  top: 0em;
+  right: -4em;
+  background-color: white;
+}
+i.fa.fa-angle-up.fa-2x.social {
+  font-size: 2em;
+  color: #22313f;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 48px;
+}
+
+nav ul li:last-child {
+  margin-right: 24px;
+}
+
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  font-weight: 601;
+}
+
 #header {
   color: white;
   height: 100vh;
@@ -93,13 +126,6 @@ h5 {
   background-color: #343a40 !important;
 }
 
-/* #portfolio {
-  height: 24em;
-  background-size: cover;
-  background: url(../images/background-portfolio.jpg) fixed;
-  background-position: bottom;
-  margin-top: -2em;
-} */
 #about,
 #portfolio,
 #services,
@@ -107,9 +133,6 @@ h5 {
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: justify;
-}
-#services {
-  /* transform: skew(0deg, -2deg); */
 }
 #services {
   background-color: #f2f2f2;
@@ -120,7 +143,6 @@ h5 {
   color: white;
 }
 #footer a:hover {
-  /* color: #22313f; */
   color: gray;
 }
 #icons {
@@ -160,11 +182,6 @@ h5 {
   right: 30px;
 }
 
-nav ul li a:hover {
-  color: white;
-  border-bottom: 0.25rem solid white;
-}
-
 .synthesis {
   background-color: #f2f2f2;
   padding: 8rem 1rem;
@@ -182,17 +199,6 @@ nav ul li a:hover {
 }
 .btn-outline-secondary:hover {
   background-color: #343a40;
-}
-a {
-  color: #343a40;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-  color: #343a40;
-}
-button:hover {
-  background-color: #7f8386;
 }
 .line-hr {
   border-width: 3px;
@@ -213,27 +219,6 @@ button:hover {
 }
 .icon {
   float: right;
-}
-a.nav-link.active {
-  background-color: #22313f !important;
-  color: white !important;
-}
-a.nav-link {
-  color: #22313f !important;
-}
-a.p-2.phone {
-  display: none;
-}
-a.p-2.back_to_top {
-  position: absolute;
-  float: right;
-  top: 0em;
-  right: -4em;
-  background-color: white;
-}
-i.fa.fa-angle-up.fa-2x.social {
-  font-size: 2em;
-  color: #22313f;
 }
 
 .card {
@@ -267,33 +252,75 @@ i.fa.fa-angle-up.fa-2x.social {
   text-decoration: none;
 }
 
-nav ul {
-  float: right;
+#nav:checked + .nav-btn {
+  transform: rotate(45deg);
 }
 
-nav ul li {
-  display: inline-block;
-  float: left;
+#nav:checked + .nav-btn i {
+  background: #000;
+  transition: transform 0.2s ease;
 }
 
-nav ul li:not(:first-child) {
-  margin-left: 48px;
+#nav:checked + .nav-btn i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
 }
 
-nav ul li:last-child {
-  margin-right: 24px;
+#nav:checked + .nav-btn i:nth-child(2) {
+  opacity: 0;
 }
 
-nav ul li a {
-  display: inline-block;
-  outline: none;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  font-size: 15px;
-  letter-spacing: 1.2px;
-  font-weight: 601;
+#nav:checked + .nav-btn i:nth-child(3) {
+  transform: translateY(-7px) rotate(90deg);
 }
+
+#nav:checked ~ .nav-wrapper {
+  z-index: 9990;
+  opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden {
+  display: none;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+}
+.box-shadow:hover {
+  cursor: pointer;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.wrap {
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+
+.wrap > .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap > .bg-video > video {
+  width: 100%;
+}
+
+/* media screen */
 
 @media screen and (max-width: 864px) {
   .logo {
@@ -393,42 +420,6 @@ nav ul li a {
   }
 }
 
-#nav:checked + .nav-btn {
-  transform: rotate(45deg);
-}
-
-#nav:checked + .nav-btn i {
-  background: #000;
-  transition: transform 0.2s ease;
-}
-
-#nav:checked + .nav-btn i:nth-child(1) {
-  transform: translateY(6px) rotate(180deg);
-}
-
-#nav:checked + .nav-btn i:nth-child(2) {
-  opacity: 0;
-}
-
-#nav:checked + .nav-btn i:nth-child(3) {
-  transform: translateY(-7px) rotate(90deg);
-}
-
-#nav:checked ~ .nav-wrapper {
-  z-index: 9990;
-  opacity: 1;
-}
-
-#nav:checked ~ .nav-wrapper ul li a {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.hidden {
-  display: none;
-}
-
-/*mobile*/
 @media (max-width: 425px) {
   #footer p {
     font-size: 12px;
@@ -455,27 +446,10 @@ nav ul li a {
   .profile-me {
     margin-top: 2px !important;
   }
-  /*a.p-2.facebook{
-		display: none;
-	}*/
   a.p-2.phone {
     display: inline;
   }
   a.p-2.back_to_top {
     right: -1em;
   }
-}
-
-.box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
-}
-.box-shadow:hover {
-  cursor: pointer;
-}
-
-.card-body {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem;
 }
