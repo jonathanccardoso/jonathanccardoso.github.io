@@ -110,6 +110,12 @@ nav ul li a {
   font-weight: 601;
 }
 
+
+html {
+  scroll-behavior: smooth;
+  /* overflow-y: scroll; */
+}
+
 #header {
   color: white;
   height: 100vh;
