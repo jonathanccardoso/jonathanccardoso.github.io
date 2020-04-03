@@ -5,7 +5,7 @@ $(document).ready(function() {
     if ($(this).scrollTop() > 0) {
       labelNav.style.display = "none";
     } else {
-      labelNav.style.display = "block";
+      labelNav.style.display = "inline-block";
     }
   });
 });

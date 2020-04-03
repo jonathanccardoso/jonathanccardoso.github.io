@@ -93,13 +93,13 @@ h5 {
   background-color: #343a40 !important;
 }
 
-#portfolio {
+/* #portfolio {
   height: 24em;
-  /*background-size: cover;*/
+  background-size: cover;
   background: url(../images/background-portfolio.jpg) fixed;
   background-position: bottom;
   margin-top: -2em;
-}
+} */
 #about,
 #portfolio,
 #services,
@@ -115,12 +115,13 @@ h5 {
   background-color: #f2f2f2;
 }
 #footer {
-  /* background-color: #22313F; */
-  background-image: linear-gradient(to bottom, #f0f0f0, #000);
+  background-color: #343a40;
+  /* background-image: linear-gradient(to bottom, #f0f0f0, #000); */
   color: white;
 }
 #footer a:hover {
-  color: #22313f;
+  /* color: #22313f; */
+  color: gray;
 }
 #icons {
   background-color: #162029;
@@ -182,9 +183,13 @@ nav ul li a:hover {
 .btn-outline-secondary:hover {
   background-color: #343a40;
 }
+a {
+  color: #343a40;
+  text-decoration: none;
+}
 a:hover {
-  /*background-color: #7f8386;*/ /*#22313f*/
-  color: #22313f;
+  text-decoration: none;
+  color: #343a40;
 }
 button:hover {
   background-color: #7f8386;
@@ -459,4 +464,18 @@ nav ul li a {
   a.p-2.back_to_top {
     right: -1em;
   }
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+}
+.box-shadow:hover {
+  cursor: pointer;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
 }
