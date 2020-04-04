@@ -110,10 +110,16 @@ nav ul li a {
   font-weight: 601;
 }
 
-
 html {
   scroll-behavior: smooth;
   /* overflow-y: scroll; */
+}
+
+#initial {
+  background: url(../images/background-portfolio.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 
 #header {
@@ -191,8 +197,6 @@ html {
 .synthesis {
   background-color: #f2f2f2;
   padding: 8rem 1rem;
-  /* margin-bottom: 2rem; */
-  border-radius: 0.3rem;
 }
 
 .synthesis .container {
@@ -200,8 +204,8 @@ html {
 }
 
 .btn-outline-secondary {
-  color: #343a40;
-  border-color: #343a40;
+  color: white;
+  border-color: white;
 }
 .btn-outline-secondary:hover {
   background-color: #343a40;
