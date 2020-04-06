@@ -20,12 +20,15 @@ $(document).ready(function () {
 
   let i = true;
   labelNav.addEventListener("click", () => {
-    if (i) {
-      document.querySelector("body").style.overflowY = "hidden";
-      i = false;
-    } else {
-      document.querySelector("body").style.overflowY = "initial";
-      i = true;
+    if (/Mobi/.test(navigator.userAgent)) {
+      if (i) {
+        document.querySelector("body").style.overflowY = "hidden";
+        console.log("hidden");
+        i = false;
+      } else {
+        document.querySelector("body").style.overflowY = "initial";
+        i = true;
+      }
     }
   });
 });
