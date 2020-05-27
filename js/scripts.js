@@ -1,6 +1,8 @@
 const labelNav = document.querySelector("label#labelNav");
-
 const linkNav = document.querySelector("nav > .nav-wrapper > ul > li > a");
+
+const h1 = document.querySelector("h1.jumbotron-heading");
+const p = document.querySelector("p.lead");
 
 $(document).ready(function () {
   var links = document.querySelectorAll("nav > .nav-wrapper > ul > li > a");
@@ -32,3 +34,16 @@ $(document).ready(function () {
     }
   });
 });
+
+function typeWritter(text) {
+  const textArray = text.innerHTML.split("");
+  text.innerHTML = "";
+  textArray.forEach((letter, index) => {
+    setTimeout(function () {
+      text.innerHTML += letter;
+    }, 75 * index);
+  });
+}
+
+typeWritter(h1);
+typeWritter(p);
